@@ -11,6 +11,7 @@
 :root{
 	--color-primary: #F3D03E;
 	--color-secondary: #f29f4b;
+	--color-complementary:#707372;
 }
 
 a:focus,
@@ -1029,7 +1030,7 @@ a[href*='tel'], a[href*='mailto'] {
 		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.03);
 	}
 	.desktop .box-icon-megan:hover .box-icon-megan-header::before, .desktop .box-icon-megan:hover .box-icon-megan-header::after {
-		border-color: #31ffc1;
+		border-color: var(--color-secondary);
 	}
 	.desktop .box-icon-megan:hover .box-icon-megan-header::before {
 		height: 44px;
@@ -7336,7 +7337,7 @@ p + .quote-classic {
 }
 
 .footer-modern {
-	background: #2c2c2c;
+	background: var(--color-complementary);
 }
 
 .footer-modern > * + * {
