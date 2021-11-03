@@ -4086,7 +4086,8 @@ textarea.form-input {
 }
 
 .form-label.focus {
-	opacity: 0;
+	color: var(--color-primary);
+	transition: all .5s;
 }
 
 .form-label.auto-fill {
