@@ -15435,11 +15435,11 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-modern.rd-navbar-static.rd-navbar--is-stuck .rd-nav-link, .rd-navbar-modern.rd-navbar-static.rd-navbar--is-clone .rd-nav-link {
-	padding: 22px 0;
+	padding: 46px 0;
 }
 
 .rd-navbar-modern.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-project-hamburger-open, .rd-navbar-modern.rd-navbar-static.rd-navbar--is-clone .rd-navbar-project-hamburger-open {
-	bottom: 16px;
+	bottom: 38px;
 }
 
 .rd-navbar-modern.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-nav-item > .rd-navbar-submenu, .rd-navbar-modern.rd-navbar-static.rd-navbar--is-clone .rd-navbar-nav-item > .rd-navbar-submenu {
@@ -21306,5 +21306,17 @@ disabled look for disabled choices in the results dropdown
 	}
 	.isotope-filters .isotope-filters-toggle {
 		display: none;
+	}
+}
+
+
+/* MIS CAMBIOS */
+@media(min-width:1200px){
+	.rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open{
+		bottom:33px;
+	}
+
+	.rd-navbar-modern.rd-navbar-static .rd-navbar-inner-outer{
+		max-height:144px;
 	}
 }
