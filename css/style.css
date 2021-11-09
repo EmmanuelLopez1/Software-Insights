@@ -11762,7 +11762,6 @@ html [class*='section-'].section-top-0 {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0, 0, 0, 0.4);
 }
 
 .bg-dark-overlay.bg-image-left-1 {
@@ -21330,5 +21329,11 @@ disabled look for disabled choices in the results dropdown
 	}
 }
 
-/* INPUTS */
+/* LOGO */
 
+
+@media(min-width: 768px){
+	.logo-home{
+		width: 50% !important;
+	}
+}
