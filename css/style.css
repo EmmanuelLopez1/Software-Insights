@@ -21337,3 +21337,9 @@ disabled look for disabled choices in the results dropdown
 		width: 50% !important;
 	}
 }
+
+/* QUIENES SOMOS */
+.about-us-info>p:first-child{
+	color: #303030;
+	line-height: 1.375em;
+}
