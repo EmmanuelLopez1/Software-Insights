@@ -15336,7 +15336,7 @@ html.rd-navbar-fixed-linked .page {
 
 @media (min-width: 1200px) {
 	.rd-navbar-modern.rd-navbar-static .rd-navbar-main {
-		padding-right: 110px;
+		padding-right: 50px;
 	}
 }
 
@@ -15456,6 +15456,14 @@ html.rd-navbar-fixed-linked .page {
 @media (min-width: 1200px) {
 	.rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open {
 		bottom: 26px;
+		margin-right: -10px;
+	}
+}
+
+@media (min-width: 1250px) {
+	.rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open {
+		bottom: 26px;
+		margin-right: -40px;
 	}
 }
 
