@@ -76,3 +76,9 @@
 .quote-tara-text{
     color:var(--color-complementary3)
 }
+
+/* SERVICIOS PROTOTIPO 3 */
+.service-icon{
+    font-size:40px;
+    color: var(--color-secondary);
+}
