@@ -44,15 +44,6 @@
 }
 
 
-/* SERVICIOS */
-.team-abby:hover  .service-text{
-	display:none;
-	transition:all .5s;
-}
-
-.team-abby:hover .image-service{
-	background:url('');
-}
 
 /* SERVICIOS PROTOTIPO 2 */
 .quote-tara-figure{
