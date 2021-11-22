@@ -20623,7 +20623,7 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 .select2-container .select2-choice {
 	display: block;
 	position: relative;
-	color: #777777;
+	color: var(--color-secondary);
 	background-color: #ffffff;
 	padding: 16px 40px 16px 26px;
 	border-radius: 0;
