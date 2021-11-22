@@ -44,30 +44,6 @@
 }
 
 
-
-/* SERVICIOS PROTOTIPO 2 */
-.quote-tara-figure{
-    height: 115px;
-    width:115px;
-    background-color: var(--color-complementary2);
-    background-image: url(../sources/llave-inglesa\ \(1\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.quote-tara-figure2{
-    height: 115px;
-    width:115px;
-    background-color: white;
-	background-image: url(../sources/llave-inglesa-white\ \(2\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.quote-tara-text{
-    color:var(--color-complementary3)
-}
-
 /* SERVICIOS PROTOTIPO 3 */
 .service-icon{
     font-size:40px;
