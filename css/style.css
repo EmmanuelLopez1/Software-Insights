@@ -5319,7 +5319,7 @@ h4 + .rd-form {
 	position: relative;
 	text-align: center;
 	padding: 10px 10px 0;
-	max-width: 470px;
+	width: 75% !important;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 1;

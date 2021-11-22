@@ -1,51 +1,87 @@
-:root{
-	--color-primary: #F3D03E;
-	--color-secondary: #f29f4b;
-	--color-complementary:#707372;
-	--color-complementary2: #FFF5AF;
-    --color-complementary3: #337ab7;
+:root {
+  --color-primary: #f3d03e;
+  --color-secondary: #f29f4b;
+  --color-complementary: #707372;
+  --color-complementary2: #fff5af;
+  --color-complementary3: #337ab7;
 
-	/* FUENTES */
-	--font-titles: Helvetica-bold;
-	--font-parrafos:Bebas;
+  /* FUENTES */
+  --font-titles: Helvetica-bold;
+  --font-parrafos: Bebas;
 }
 
-
 /* MIS CAMBIOS */
-@media(min-width:1200px){
-	.rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open{
-		bottom:33px;
-	}
+@media (min-width: 1200px) {
+  .rd-navbar-modern.rd-navbar-static .rd-navbar-project-hamburger-open {
+    bottom: 33px;
+  }
 
-	.rd-navbar-modern.rd-navbar-static .rd-navbar-inner-outer{
-		max-height:144px;
-	}
+  .rd-navbar-modern.rd-navbar-static .rd-navbar-inner-outer {
+    max-height: 144px;
+  }
 }
 
 /* BORDES BNT */
-.btn:focus{
-	box-shadow:0 0 0 0;
+.btn:focus {
+  box-shadow: 0 0 0 0;
 }
-.btn:hover{
-	border-color:transparent;
+.btn:hover {
+  border-color: transparent;
 }
 
 /* LOGO */
-@media(min-width: 768px){
-	.logo-home{
-		width: 50% !important;
-	}
+@media (min-width: 768px) {
+  .logo-home {
+    width: 50% !important;
+  }
 }
 
 /* QUIENES SOMOS */
-.about-us-info>p:first-child{
-	color: #303030;
-	line-height: 1.375em;
+.about-us-info > p:first-child {
+  color: #303030;
+  line-height: 1.375em;
 }
-
 
 /* SERVICIOS PROTOTIPO 3 */
-.service-icon{
-    font-size:40px;
-    color: var(--color-secondary);
+.service-icon {
+  font-size: 40px;
+  color: var(--color-secondary);
 }
+
+/* CONOCE NUESTRO TRABAJO CAROUSEL */
+.proyectos-container {
+  width: 80% !important;
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .post-creative {
+	  width:22% !important;
+  }
+  .glider-next {
+	right: 60px;
+  }
+  .glider-prev {
+	left: 60px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+	.glider-next {
+	  right: 70px;
+	}
+	.glider-prev {
+	  left: 70px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.glider-next {
+	  right: 120px;
+	}
+	.glider-prev {
+	  left: 120px;
+	}
+}
+  
