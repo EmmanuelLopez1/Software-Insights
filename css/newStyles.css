@@ -84,4 +84,20 @@
 	  left: 120px;
 	}
 }
+
+/* PRELOADER */
+.preloader-logo{
+  width:500px;
+  height:500px;
+}
+
+.cls-1 {
+  fill: #f6c934;
+}
+
+.cls-2 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
   
