@@ -10,10 +10,11 @@
   --font-parrafos: Bebas;
 
   /* ANIMATION COLORS */
-  --logo-animation-color1: #f65b35;
-  --logo-animation-color2: #f68c34;
-  --logo-animation-color3: #f29f4b;
-  --logo-animation-color4: #f3d03e;
+  --logo-animation-color1: var(--color-secondary);
+  --logo-animation-color2: #f2a146;
+  --logo-animation-color3: #f2b742;
+  --logo-animation-color4: var(--color-primary);
+  --logo-animation-duration:5s;
 }
 
 /* MIS CAMBIOS */
@@ -93,8 +94,8 @@
 
 /* PRELOADER */
 .preloader-logo{
-  width:500px;
-  height:500px;
+  width:250px;
+  height:250px;
 }
 
 .cls-1,
@@ -123,7 +124,7 @@
 /* ANIMACION DEL LOGO */
 #fondo stop:nth-child(1) {
   animation-name: color1;
-  animation-duration: 5s;
+  animation-duration: var(--logo-animation-duration);
   animation-iteration-count: infinite;
   animation-direction:alternate;
 
@@ -131,28 +132,28 @@
 
 #fondo stop:nth-child(2) {
   animation-name: color2;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction:alternate;
 }
 
 #fondo stop:nth-child(3) {
   animation-name: color3;
-  animation-duration: 5s;
+  animation-duration:var(--logo-animation-duration);
   animation-iteration-count: infinite;
   animation-direction:alternate;
 }
 
 #fondo stop:nth-child(4) {
   animation-name: color4;
-  animation-duration: 5s;
+  animation-duration: var(--logo-animation-duration);
   animation-iteration-count: infinite;
   animation-direction:alternate;
 }
 
 #adornos path{
   animation-name: color3;
-  animation-duration: 5s;
+  animation-duration: var(--logo-animation-duration);
   animation-iteration-count: infinite;
   animation-direction:alternate;
 }
