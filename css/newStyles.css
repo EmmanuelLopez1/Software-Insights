@@ -8,6 +8,12 @@
   /* FUENTES */
   --font-titles: Helvetica-bold;
   --font-parrafos: Bebas;
+
+  /* ANIMATION COLORS */
+  --logo-animation-color1: #f65b35;
+  --logo-animation-color2: #f68c34;
+  --logo-animation-color3: #f29f4b;
+  --logo-animation-color4: #f3d03e;
 }
 
 /* MIS CAMBIOS */
@@ -91,13 +97,126 @@
   height:500px;
 }
 
+.cls-1,
+.cls-2 {
+  stroke-miterlimit: 10;
+}
+
 .cls-1 {
-  fill: #f6c934;
+  fill: url(#fondo);
+  stroke: url(#contorno);
 }
 
 .cls-2 {
   fill: #fff;
   stroke: #fff;
-  stroke-miterlimit: 10;
+}
+
+.cls-3 {
+  fill: url(#adornos);
+}
+
+.cls-4 {
+  fill: url(#adornos);
 }
   
+/* ANIMACION DEL LOGO */
+#fondo stop:nth-child(1) {
+  animation-name: color1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+
+}
+
+#fondo stop:nth-child(2) {
+  animation-name: color2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+#fondo stop:nth-child(3) {
+  animation-name: color3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+#fondo stop:nth-child(4) {
+  animation-name: color4;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+#adornos path{
+  animation-name: color3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+@keyframes color1 {
+  0% {
+    stop-color: var(--logo-animation-color1);
+  }
+  25% {
+    stop-color: var(--logo-animation-color2);
+  }
+  75% {
+    stop-color: var(--logo-animation-color3);
+  }
+  100% {
+    stop-color: var(--logo-animation-color4);
+  }
+}
+
+@keyframes color2 {
+  0% {
+    stop-color: var(--logo-animation-color2);
+  }
+  25% {
+    stop-color: var(--logo-animation-color3);
+  }
+  75% {
+    stop-color: var(--logo-animation-color4);
+  }
+  100% {
+    stop-color: var(--logo-animation-color1);
+  }
+}
+
+@keyframes color3 {
+  0% {
+    stop-color: var(--logo-animation-color3);
+    fill:var(--logo-animation-color3);
+  }
+  25% {
+    stop-color: var(--logo-animation-color4);
+    fill:var(--logo-animation-color4);
+  }
+  75% {
+    stop-color: var(--logo-animation-color1);
+    fill:var(--logo-animation-color1);
+  }
+  100% {
+    stop-color: var(--logo-animation-color2);
+    fill:var(--logo-animation-color2);
+  }
+}
+
+@keyframes color4 {
+  0% {
+    stop-color: var(--logo-animation-color4);
+  }
+  25% {
+    stop-color: var(--logo-animation-color1);
+  }
+  75% {
+    stop-color: var(--logo-animation-color2);
+  }
+  100% {
+    stop-color: var(--logo-animation-color3);
+  }
+} 
