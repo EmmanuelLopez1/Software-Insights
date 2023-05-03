@@ -1,0 +1,194 @@
+* {
+  margin: 0px;
+}
+
+:root {
+  --color-primary: #f3d03e;
+  --color-secondary: #f29f4b;
+  --color-complementary: #707372;
+  --color-complementary2: #fff5af;
+  --color-complementary3: #337ab7;
+
+  /* ANIMATION COLORS */
+  --logo-animation-color1: var(--color-secondary);
+  --logo-animation-color2: #f2a146;
+  --logo-animation-color3: #f2b742;
+  --logo-animation-color4: var(--color-primary);
+  --logo-animation-duration:5s;
+
+  /* ANIMATION */
+  --color-primary-animation: invert(93%) sepia(75%) saturate(889%)
+    hue-rotate(327deg) brightness(98%) contrast(95%);
+  --color-secondary-animation: invert(81%) sepia(31%) saturate(2334%)
+    hue-rotate(324deg) brightness(99%) contrast(91%);
+}
+
+#logo-svg {
+  margin: 100px auto 100px;
+  display: block;
+  width: 250px;
+  height: 250px;
+}
+
+.cls-1,
+.cls-2 {
+  stroke-miterlimit: 10;
+}
+
+.cls-1 {
+  fill: url(#fondo);
+  stroke: url(#contorno);
+}
+
+.cls-2 {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.cls-3 {
+  fill: url(#adornos);
+}
+
+.cls-4 {
+  fill: url(#adornos);
+}
+
+/* ANIMATION LOGO FONDO */
+#fondo stop:nth-child(1) {
+  animation-name: color1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+
+}
+
+#fondo stop:nth-child(2) {
+  animation-name: color2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+#fondo stop:nth-child(3) {
+  animation-name: color3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+#fondo stop:nth-child(4) {
+  animation-name: color4;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+#adornos path{
+  animation-name: color3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+@keyframes color1 {
+  0% {
+    stop-color: var(--logo-animation-color1);
+  }
+  25% {
+    stop-color: var(--logo-animation-color2);
+  }
+  75% {
+    stop-color: var(--logo-animation-color3);
+  }
+  100% {
+    stop-color: var(--logo-animation-color4);
+  }
+}
+
+@keyframes color2 {
+  0% {
+    stop-color: var(--logo-animation-color2);
+  }
+  25% {
+    stop-color: var(--logo-animation-color3);
+  }
+  75% {
+    stop-color: var(--logo-animation-color4);
+  }
+  100% {
+    stop-color: var(--logo-animation-color1);
+  }
+}
+
+@keyframes color3 {
+  0% {
+    stop-color: var(--logo-animation-color3);
+    fill:var(--logo-animation-color3);
+  }
+  25% {
+    stop-color: var(--logo-animation-color4);
+    fill:var(--logo-animation-color4);
+  }
+  75% {
+    stop-color: var(--logo-animation-color1);
+    fill:var(--logo-animation-color1);
+  }
+  100% {
+    stop-color: var(--logo-animation-color2);
+    fill:var(--logo-animation-color2);
+  }
+}
+
+@keyframes color4 {
+  0% {
+    stop-color: var(--logo-animation-color4);
+  }
+  25% {
+    stop-color: var(--logo-animation-color1);
+  }
+  75% {
+    stop-color: var(--logo-animation-color2);
+  }
+  100% {
+    stop-color: var(--logo-animation-color3);
+  }
+} 
+
+
+/* .loader-bg {
+  fill: #f6c934;
+  animation-name: logo-bg;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+
+.cls-2 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  animation-name: logo-foco;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes logo-bg {
+  0% {
+    fill: #f6a935;
+    transform: scale(0);
+  }
+  100% {
+    fill: #f6c934;
+    transform: scale(1);
+  }
+}
+
+@keyframes logo-foco{
+  0%{
+    transform:scale(0);
+    fill:black;
+  }
+  100%{
+    transform:scale(100%);
+    fill: white;
+  }
+} */
